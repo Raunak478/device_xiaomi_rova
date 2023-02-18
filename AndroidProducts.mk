@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_rova.mk
+    $(LOCAL_DIR)/evolution_rova.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_rova-user \
-    cherish_rova-userdebug \
-    cherish_rova-eng
+    evolution_rova-user \
+    evolution_rova-userdebug \
+    evolution_rova-eng

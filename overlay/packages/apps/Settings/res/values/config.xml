@@ -37,9 +37,5 @@
     <string name="config_settingsintelligence_package_name" translatable="false">
         com.google.android.settings.intelligence
     </string>
-<!-- Battery health -->
-    <bool name="config_supportBatteryHealth">true</bool>
-    <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/bms/charge_full</string>
-   
 
 </resources>

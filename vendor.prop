@@ -115,7 +115,8 @@ persist.vendor.camera.HAL3.enabled=1
 persist.vendor.cne.feature=1
 
 # Display
-ro.sf.blurs_are_expensive=0
+debug.sf.hw=0
+debug.egl.hw=0
 ro.surface_flinger.supports_background_blur=0
 debug.sf.latch_unsignaled=1
 debug.sf.disable_backpressure=1
