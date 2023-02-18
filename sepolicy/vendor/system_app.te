@@ -31,10 +31,3 @@ allow system_app sysfs_zram:file r_file_perms;
 # Zygote
 allow system_app zygote:unix_stream_socket { getopt };
 
-# Battery Health
-allow system_app vendor_sysfs_battery_supply:dir { search };
-allow system_app vendor_sysfs_battery_supply:file { read };
-allow system_app vendor_sysfs_battery_supply:file { open };
-allow system_app vendor_sysfs_battery_supply:file { getattr };
-
-r_dir_file(system_app, vendor_sysfs_battery_supply)
