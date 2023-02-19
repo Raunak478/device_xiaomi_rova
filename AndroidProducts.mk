@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_rova.mk
+    $(LOCAL_DIR)/aosp_rova.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_rova-user \
-    evolution_rova-userdebug \
-    evolution_rova-eng
+    aosp_rova-user \
+    aosp_rova-userdebug \
+    aosp_rova-eng
