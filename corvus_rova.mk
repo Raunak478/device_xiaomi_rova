@@ -10,13 +10,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 
-# Inherit some common Evolution X stuff.
-EVO_BUILD_TYPE := UNOFFICIAL
-TARGET_GAPPS_ARCH := arm64
-TARGET_USES_MINI_GAPPS := true
+# CorvusOS
+CORVUS_MAINTAINER=@maxx459
+USE_GAPPS=false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Inherit some common device props
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -28,7 +28,7 @@ $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := aosp_rova
+PRODUCT_NAME := corvus_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
