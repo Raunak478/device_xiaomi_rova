@@ -14,7 +14,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 
 # Add Elixir Flags
-ELIXIR_MAINTAINER := Itachi
+ELIXIR_MAINTAINER := @maxx459
 
 # Inherit some common device props
 TARGET_SUPPORTS_QUICK_TAP := true
