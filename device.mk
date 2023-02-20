@@ -158,6 +158,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # FM
 PRODUCT_PACKAGES += \
     RevampedFMRadio \
