@@ -34,11 +34,11 @@ TARGET_SUPPORTS_QUICK_TAP := true
 USE_GAPPS := false
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-awaken
 
 PRODUCT_PACKAGES += \
-    xiaomi_riva_overlay_lineage \
-    xiaomi_rolex_overlay_lineage
+    xiaomi_riva_overlay_awaken \
+    xiaomi_rolex_overlay_awaken
 
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
