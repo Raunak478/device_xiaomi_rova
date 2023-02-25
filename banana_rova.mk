@@ -10,13 +10,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/banana/config/common_full_phone.mk)
 
-# Inherit some props from Cherish
-CHERISH_VANILLA := true
-#TARGET_USES_MINI_GAPPS := true
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer= @maxx459
+# Inherit some props from banana
+BANANA_MAINTAINER := @maxx459
 
 # Inherit some common device props
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -28,7 +25,7 @@ $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := aosp_rova
+PRODUCT_NAME := banana_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
@@ -40,11 +37,11 @@ TARGET_BOOT_ANIMATION_RES := 720
 
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-aosp
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-banana
 
 PRODUCT_PACKAGES += \
-    xiaomi_riva_overlay_lineage \
-    xiaomi_rolex_overlay_lineage
+    xiaomi_riva_overlay_banana \
+    xiaomi_rolex_overlay_banana
 
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
