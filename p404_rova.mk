@@ -7,11 +7,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
-
-# ArrowOS additions
-DEVICE_MAINTAINER := @maxx459
+# Inherit some common P404 stuff.
+$(call inherit-product, vendor/404/config/common.mk)
 
 # Inherit some common device props
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -23,7 +20,7 @@ $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := arrow_rova
+PRODUCT_NAME := p404_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
@@ -35,11 +32,11 @@ TARGET_BOOT_ANIMATION_RES := 720
 
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-arrow
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-p404
 
 PRODUCT_PACKAGES += \
-    xiaomi_riva_overlay_arrow \
-    xiaomi_rolex_overlay_arrow
+    xiaomi_riva_overlay_p404 \
+    xiaomi_rolex_overlay_p404
 
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
