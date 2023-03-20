@@ -8,7 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
 # Inherit some common P404 stuff.
-$(call inherit-product, vendor/404/config/common.mk)
+$(call inherit-product, vendor/404/configs/common.mk)
 
 # Inherit some common device props
 TARGET_SUPPORTS_QUICK_TAP := true
