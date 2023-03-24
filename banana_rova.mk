@@ -9,8 +9,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/banana/config/common_full_phone.mk)
+# Inherit some common BananaDroid stuff
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Inherit some props from banana
 BANANA_MAINTAINER := @maxx459
