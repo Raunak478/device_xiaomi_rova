@@ -59,9 +59,6 @@ public class DefaultSystemSettings {
             writeDisableNavkeysOption(true);
         }
 
-        if (isFirstRun("enable-battery-light")) {
-            writeBatteryLightOption(true);
-        }
 
         if (isFirstRun("enable-dt2w")) {
             writeDt2wOption(true);
@@ -86,16 +83,6 @@ public class DefaultSystemSettings {
         }
     }
 
-    private void writeBatteryLightOption(final boolean enabled) {
-        final boolean isBatteryLightEnabled = Settings.System.getIntForUser(
-                mContext.getContentResolver(), Settings.System.BATTERY_LIGHT_ENABLED, 0,
-                UserHandle.USER_CURRENT) != 0;
-        if (enabled != isBatteryLightEnabled) {
-            	Settings.System.putIntForUser(mContext.getContentResolver(),
-                    	Settings.System.BATTERY_LIGHT_ENABLED, enabled ? 1 : 0,
-                    UserHandle.USER_CURRENT);
-        }
-    }
 
     private void writeDt2wOption(final boolean enabled) {
         final boolean isDt2wEnabled = Settings.Secure.getIntForUser(
