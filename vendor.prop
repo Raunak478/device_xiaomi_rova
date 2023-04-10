@@ -97,6 +97,8 @@ persist.vendor.qcom.bluetooth.enable.splita2dp=false
 persist.vendor.qcom.bluetooth.soc=pronto
 vendor.qcom.bluetooth.soc=pronto
 ro.vendor.bluetooth.wipower=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aac-aptx-aptxhd-ldac
 
 # Camera
 camera.display.lmax=1280x720
@@ -115,6 +117,7 @@ persist.vendor.camera.HAL3.enabled=1
 persist.vendor.cne.feature=1
 
 # Display
+debug.sf.disable_backpressure=1
 debug.enable.sglscale=1
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
@@ -130,8 +133,11 @@ ro.hardware.vulkan=adreno
 ro.qcom.svi.sensortype=2
 config.svi.xml=1
 config.svi.path=/vendor/data/sviconfig.xml
+vendor.display.disable_metadata_dynamic_fps=1
+vendor.display.disable_partial_split=1
 vendor.display.disable_rotator_downscale=1
 vendor.display.disable_skip_validate=1
+vendor.display.perf_hint_window=50
 vendor.display.enable_default_color_mode=1
 vendor.gralloc.enable_fb_ubwc=1
 
@@ -205,6 +211,7 @@ persist.vendor.debug.sensors.hal=i
 
 # SurfaceFlinger
 debug.sf.use_phase_offsets_as_durations=1
+debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.late.sf.duration=10500000
@@ -233,3 +240,4 @@ persist.vendor.qcomsysd.enabled=1
 
 # Zygote
 zygote.critical_window.minute=10
+ro.hw_timeout_multiplier=6
