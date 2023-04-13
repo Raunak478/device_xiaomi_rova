@@ -88,12 +88,13 @@ public class DefaultSystemSettings {
         }
     }
 
-    private void writeAnimationSettings() {
-        Settings.Global.putString(mContext.getContentResolver(),
-                Settings.Global.WINDOW_ANIMATION_SCALE, "0.6");
-        Settings.Global.putString(mContext.getContentResolver(),
-                Settings.Global.TRANSITION_ANIMATION_SCALE, "0.6");
-        Settings.Global.putString(mContext.getContentResolver(),
-                Settings.Global.ANIMATOR_DURATION_SCALE, "0.6");
-    }
+  /*  private void writeAnimationSettings() {
+   *    Settings.Global.putString(mContext.getContentResolver(),
+   *            Settings.Global.WINDOW_ANIMATION_SCALE, "0.6");
+   *    Settings.Global.putString(mContext.getContentResolver(),
+   *             Settings.Global.TRANSITION_ANIMATION_SCALE, "0.6");
+   *    Settings.Global.putString(mContext.getContentResolver(),
+   *             Settings.Global.ANIMATOR_DURATION_SCALE, "0.6");
+   * }
+   */
 }
