@@ -94,7 +94,7 @@ public class DefaultSystemSettings {
         Settings.Global.putString(mContext.getContentResolver(),
                  Settings.Global.TRANSITION_ANIMATION_SCALE, "0.7");
         Settings.Global.putString(mContext.getContentResolver(),
-                 Settings.Global.ANIMATOR_DURATION_SCALE, "0.8");
+                 Settings.Global.ANIMATOR_DURATION_SCALE, "0.7");
      }
     
 }
