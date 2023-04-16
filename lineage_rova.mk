@@ -23,6 +23,7 @@ TARGET_CORE_GAPPS := false
 TARGET_CORE_GAPPS_EXTRAS := false
 
 # Alpha internal properties
+ALPHA_BUILD_TYPE := Official
 TARGET_ENABLE_BLUR := false
 TARGET_INCLUDE_MATLOG := false
 TARGET_USE_GRAPHENE_CAMERA := true
