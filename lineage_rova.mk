@@ -15,6 +15,19 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
+#RisingOS Flags
+RISING_MAINTAINER := @maxx459
+WITH_GMS := false
+TARGET_CORE_GMS := false
+TARGET_CORE_GMS_EXTRAS := false
+TARGET_ENABLE_BLUR := false
+TARGET_HAS_UDFPS := false
+TARGET_SUPPORTS_QUICK_TAP := false
+SUSHI_BOOTANIMATION := 720
+TARGET_USE_GOOGLE_TELEPHONY := false
+TARGET_ENABLE_PIXEL_GBOARD_PADDINGS := true
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
 PRODUCT_NAME := lineage_rova
