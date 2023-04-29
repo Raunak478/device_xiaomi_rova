@@ -13,7 +13,3 @@
 -keep class org.lineageos.settings.smartcharging.* {
   *;
 }
-
--keep class org.lineageos.settings.pocketjudge.* {
-  *;
-}
