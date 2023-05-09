@@ -96,7 +96,7 @@ TARGET_USES_GRALLOC4 := true
 TARGET_USES_QTI_MAPPER_2_0 := true
 TARGET_USES_QTI_MAPPER_EXTENSIONS_1_1 := true
 
-TARGET_SCREEN_DENSITY := 267
+TARGET_SCREEN_DENSITY := 280
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -135,7 +135,7 @@ endif
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci
 BOARD_KERNEL_CMDLINE += earlycon=msm_hsl_uart,0x78b000
-BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true
+BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
