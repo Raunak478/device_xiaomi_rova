@@ -9,20 +9,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
+# Maintainer
+PRODUCT_GENERIC_PROPERTIES += \
+    ro.cherish.maintainer=@maxx459
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := lineage_rova
+PRODUCT_NAME := cherish_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
+WITH_GMS := false
+
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
