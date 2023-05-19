@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, vendor/arrow/config/common.mk)
 
 # ArrowOS additions
-DEVICE_MAINTAINER := @maxx459
+DEVICE_MAINTAINER := @codedrex459
 
 # Inherit some common device props
 TARGET_SUPPORTS_QUICK_TAP := true
