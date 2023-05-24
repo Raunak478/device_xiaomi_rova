@@ -151,6 +151,14 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
 
+# Dolby
+TARGET_EXCLUDES_AUDIOFX := true
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/Dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    $(LOCAL_PATH)/configs/Dolby/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
+
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
